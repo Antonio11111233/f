@@ -6,6 +6,8 @@ import { SITE_NAME } from '@/constants/seo.constants'
 
 import './globals.scss'
 import { Providers } from './providers'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 
 const zen = Noto_Sans({
 	subsets: ['cyrillic', 'latin'],
@@ -40,6 +42,9 @@ export default function RootLayout({
 						duration={1500}
 					/>
 				</Providers>
+				<Navbar/>
+				<Sidebar/>
+				
 			</body>
 		</html>
 	)
