@@ -8,37 +8,26 @@ import {
     RxHome,
     RxPerson,
     RxDashboard,
+    RxModulzLogo,
+    RxComponent1,
   } from "react-icons/rx";
   
   export const Socials = [
     {
       name: "Discord",
-      src: "/assets/discord.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/assets/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/assets/instagram.svg",
-    },
+      src: "/assets/icons8-discord.svg",
+    }
   ];
   
   export const NavLinks = [
     {
       name: "Home",
-      icon: RxHome,
+      icon: RxModulzLogo,
       link: "/",
     },
     {
-      name: "About me",
-      icon: RxPerson,
-      link: "/about-me",
-    },
-    {
       name: "Projects",
-      icon: RxDashboard,
+      icon: RxComponent1,
       link: "/my-projects",
     },
   ];

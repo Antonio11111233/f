@@ -15,11 +15,11 @@ export const MENU: IMenuItem[] = [
 		link: DASHBOARD_PAGES.TASKS,
 		name: 'Задачи'
 	},
-	// {
-	// 	icon: ChevronRight,
-	// 	link: DASHBOARD_PAGES.TIMER,
-	// 	name: 'Таймер'
-	// },
+	{
+		icon: ChevronRight,
+		link: DASHBOARD_PAGES.TIMER,
+		name: 'Таймер'
+	},
 	{
 		icon: ChevronRight,
 		link: DASHBOARD_PAGES.TIME_BLOCKING,

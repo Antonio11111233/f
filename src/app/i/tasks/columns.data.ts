@@ -20,27 +20,27 @@ export const FILTERS: Record<string, Dayjs> = {
 
 export const COLUMNS = [
 	{
-		label: 'Today',
+		label: 'Сегодня',
 		value: 'today'
 	},
 	{
-		label: 'Tomorrow',
+		label: 'Завтра',
 		value: 'tomorrow'
 	},
 	{
-		label: 'On this week',
+		label: 'На этой неделе',
 		value: 'on-this-week'
 	},
 	{
-		label: 'On next week',
+		label: 'На следующей неделе',
 		value: 'on-next-week'
 	},
 	{
-		label: 'Later',
+		label: 'позже',
 		value: 'later'
 	},
 	{
-		label: 'Completed',
+		label: 'Выполнено',
 		value: 'completed'
 	}
 ]

@@ -1,0 +1,149 @@
+/* @media (max-width: 1000px){
+    #text_dobro{
+        margin-left: -120px;
+    }
+}
+@media (max-width: 1250px){
+    #komanda_button_1{
+        margin-left: -45px;
+    }
+    #komanda_button_2{
+        margin-left: -35px;
+    }
+}
+@media (max-width: 1000px){
+    #komanda_button_1{
+        font-size: 20px;
+    }
+    #komanda_button_2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 900px){
+    #text_dobro{
+        margin-left: -150px;
+    }
+    #text_dobro_3{
+        margin-left: -150px;
+        font-size: 21px;
+        width: 300px;
+    }
+    #komanda_button_1{
+        font-size: 15px;
+        margin-left: +0vw;
+    }
+    #komanda_button_2{
+        margin-left: -200px;
+        margin-top: 320px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 750px){
+    #text_dobro_1{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 420px){
+    #text_dobro_2{
+        margin-top: 95px;
+        font-size: 35px;
+    }
+    #text_dobro_1{
+        margin-top: 125px;
+        font-size: 70px;
+    }
+    #text_dobro{
+        margin-left: -150px;
+        font-size: 19px;
+        width: 300px;
+    }
+    #text_dobro_3{
+        margin-left: -150px;
+        font-size: 21px;
+        width: 300px;
+    }
+    #komanda_button_1{
+        margin-top: 750px;
+        font-size: 15px;
+        margin-left: -78vw;
+    }
+    #komanda_button_2{
+        margin-left: -0.1px;
+        margin-top: 750px;
+        font-size: 15px;
+    }
+} */
+
+
+@media (min-width: 1920px){
+    #text_dobro{
+        font-size: 29px;
+        max-width: 600px;
+        margin-left: 90px;
+	    /* text-shadow: 1px 1px 1px #3d3636; */
+        /* background-color: rgba(56, 56, 56, 0.082); */
+
+    }
+    #text_dobro_3{
+        font-size: 36px;
+        margin-left: 90px;
+    }
+    #komanda_button_1{
+        max-width: 500px;
+        font-size: 32px;
+    }
+    #komanda_button_2{
+        max-width: 500px;
+        font-size: 32px;
+    }
+    #individ{
+        height: 100px;
+    }
+    #individ_1{
+        height: 100px;
+    }
+    #sidebar{
+        width: 70px;
+        height: 230px;
+        margin-top: -40px;
+        margin-right: 25px;
+    }
+    #icon_sidebar{
+        width: 46px;
+        height: auto;
+    }
+    #part{
+        /* width: 65%;
+        height: 100%;
+        margin-left: 35%; */
+    }
+}
+
+
+
+
+
+
+
+
+
+.bac_c{
+background-color:  rgba(13, 14, 17, 0.459);
+}
+
+/* rgba(17, 14, 13, 0.863) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

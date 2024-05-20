@@ -12,6 +12,7 @@ const Particle = () => {
   const particlesLoaded = useCallback(async () => {}, []);
   return (
     <Particles
+    id="part"
       className="h-screen"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -28,7 +29,7 @@ const Particle = () => {
           },
           modes: {
             repulse: {
-              distance: 100,
+              distance: 70,
               duration: 0.4,
             },
           },
@@ -36,10 +37,10 @@ const Particle = () => {
 
         particles: {
           color: {
-            value: "#EE0F0F",
+            value: "#ffff00",
           },
           links: {
-            color: "#EE0F0F",
+            color: "#ffffff",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -50,18 +51,18 @@ const Particle = () => {
           },
           move: {
             enable: true,
-            direction: "top-left",
+            // direction: "bottom-right",
             outModes: {
               default: "bounce",
             },
             random: true,
             straight: false,
-            speed: 1,
+            speed: 0.8,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 2100,
             },
             value: 105,
           },
@@ -72,7 +73,7 @@ const Particle = () => {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 2 },
           },
         },
         detectRetina: true,

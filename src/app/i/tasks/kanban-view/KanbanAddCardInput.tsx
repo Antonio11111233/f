@@ -33,7 +33,7 @@ export function KanbanAddCardInput({
 				onClick={addCard}
 				className='italic opacity-40 text-sm'
 			>
-				Add task...
+				Добавить задачу...
 			</button>
 		</div>
 	)

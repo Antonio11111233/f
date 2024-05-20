@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+	margin: 0;
+	padding: 0;
+}
 :root {
 	--foreground-rgb: 255, 255, 255;
 	--background-start-rgb: 214, 219, 220;
@@ -20,7 +24,7 @@ body {
 	@apply text-base overflow-hidden;
 	font-family: var(--font-zen), sans-serif;
 	color: rgb(var(--foreground-rgb));
-	background-color: #000000;
+	background-color: rgba(12, 12, 12, 0.904);
 
 	@media (max-width: 1200px) {
 		font-size: 16px;
@@ -98,7 +102,22 @@ input:checked.defaultCheckbox::before {
 	animation: rotation 5s linear infinite;
   }
 
-
+  .Example {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS';
+  
+    &__blinker {
+      animation: blinker 0.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+      
+      @keyframes blinker {
+        to {
+          opacity: 0;
+        }
+      }
+    }
+  }
 
 
 
@@ -107,19 +126,22 @@ input:checked.defaultCheckbox::before {
   $speed: 0.5s;
 
 .btn-flip{
-  margin-bottom: 100px;
-  opacity: 1;
-  outline: 0;
-  color: #fff;
-  line-height: 40px;
-  position: relative;
-  text-align: center;
-  letter-spacing: 1px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
-  
+	margin-bottom: 100px;
+	margin-left: 80px;
+	opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	@media (min-width: 1920px){
+		margin-bottom: 120px;
+	}
   
   &:hover{
     
@@ -139,7 +161,6 @@ input:checked.defaultCheckbox::before {
     top: 0;
     left: 0;
     opacity: 0;
-    width: 100%;
     color: #ffffff;
     display: block;
     transition: $speed;
@@ -167,7 +188,27 @@ input:checked.defaultCheckbox::before {
 
 .OctagonX{
 	color: red;
+	
 }
 .Check{
 	color: rgb(0, 255, 0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

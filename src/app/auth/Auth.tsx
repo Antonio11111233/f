@@ -15,6 +15,9 @@ import { IAuthForm } from '@/types/auth.types'
 import { DASHBOARD_PAGES } from '@/config/pages-url.config'
 
 import { authService } from '@/services/auth.service'
+import Particle from '../components/Particle'
+import '../components/style.css'
+import './auth.scss'
 
 export function Auth() {
 	const { register, handleSubmit, reset } = useForm<IAuthForm>({
@@ -35,6 +38,7 @@ export function Auth() {
 			push(DASHBOARD_PAGES.HOME)
 		}
 	})
+	
 
 	const onSubmit: SubmitHandler<IAuthForm> = data => {
 		mutate(data)
@@ -43,7 +47,7 @@ export function Auth() {
 	return (
 		<div className='flex min-h-screen'>
 			<form
-				className='w-1/4 m-auto shadow bg-sidebar rounded-xl p-layout'
+				className='w-1/4 m-auto shadow bg-sidebar rounded-xl p-layout z-[3]'
 				onSubmit={handleSubmit(onSubmit)}
 			>
 				<Heading title='Авторизация/Регистрация' />
@@ -58,10 +62,9 @@ export function Auth() {
 						required: 'Email is required!'
 					})}
 				/>
-
 				<Field
 					id='password'
-					label='Пароль: '
+					label='Пароль: </не менее 6 символов/>'
 					placeholder='Введите пароль: '
 					type='password'
 					{...register('password', {
@@ -75,6 +78,15 @@ export function Auth() {
 					<Button onClick={() => setIsLoginForm(false)}>Регистрация</Button>
 				</div>
 			</form>
+			
+			<div className="absolute right-0 top-0 h-full w-[100%] z-[2]">
+			{/* <div className="absolute right-0 top-0 h-full w-[100%] z-[2]"> */}
+			<span className='Example__blinker' >__</span><p id="pi"></p> 
+			 {/* </div> */}
+        <Particle/>
+		
+      </div>
+	  
 		</div>
 	)
 }
