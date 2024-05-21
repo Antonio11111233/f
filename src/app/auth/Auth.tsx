@@ -81,7 +81,8 @@ export function Auth() {
 			
 			<div className="absolute right-0 top-0 h-full w-[100%] z-[2]">
 			{/* <div className="absolute right-0 top-0 h-full w-[100%] z-[2]"> */}
-			<span className='Example__blinker' >__</span><p id="pi"></p> 
+			<div className='bg'>
+			<span className='Example__blinker' >__</span></div><p id="pi"></p> 
 			 {/* </div> */}
         <Particle/>
 		

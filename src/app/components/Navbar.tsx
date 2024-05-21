@@ -10,7 +10,7 @@ const Navbar = () => {
 <div className="box">
 <div className="title">
 <span id="text_dobro_2" className="block">v4.31</span>
-<h1 id="text_dobro_1" className="text-white text-[45px]">
+<h1 id="text_dobro_1" className="hero glitch layers text-white text-[45px]" data-text="_Minimo">
   _Minimo<span></span>
   
 </h1>

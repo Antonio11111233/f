@@ -1,15 +1,15 @@
 import Image from "next/image";
-import Link from 'next/link'
+// import Link from 'next/link'
 // import  MenuItem  from "./Home";
-import { MenuItem } from "./MenuItem";
-import { MenuItemTwo} from "./MenuItem-two"
-import { MENU } from "./menu.data";
-import { MENUTWO } from "./menu.data-two";
+// import { MenuItem } from "./MenuItem";
+// import { MenuItemTwo} from "./MenuItem-two"
+// import { MENU } from "./menu.data";
+// import { MENUTWO } from "./menu.data-two";
 // import './globals.scss'
 import './globals.css'
 import Particle from "./components/Particle";
 import './index.js';
-import { OctagonX } from "lucide-react";
+import { Check, OctagonX } from "lucide-react";
 import Navbar from "./components/Navbar";
 
 
@@ -70,21 +70,27 @@ export default function Home() {
      
         </div>
         <div id='komanda_button_1' className="btn-flip z-[11] " data-back="Релиз ?/12/2025" data-front="beta-test" >
-          {MENU.map(item => (
+          {/* {MENU.map(item => (
             <MenuItem
               item={item}
               key={item.link}
             />
-          ))}
+          ))} */}
+          <form action="/auth" className='flex text-[23px] gap-2.5 items-center py-1.5 mt-2 px-layout transition-colors hover:bg-border rounded-lg'>
+          <Check className="text-green-500"/><button>Индивидуальная</button>
+          </form>
         </div>
 
         <div id='komanda_button_2' className="btn-flip z-[11]" data-back="Релиз ?/05/2026" data-front="!В разработке!" >
-          {MENUTWO.map(item => (
+          {/* {MENUTWO.map(item => (
             <MenuItemTwo
               item={item}
               key={item.link}
             />
-          ))}
+          ))} */}
+           <form action="/auth" className='flex text-[23px] gap-2.5 items-center py-1.5 mt-2 px-layout transition-colors hover:bg-border rounded-lg'>
+          <OctagonX className="text-red-500"/><button>Командная</button>
+          </form>
         </div>
         <Navbar />
     </main>

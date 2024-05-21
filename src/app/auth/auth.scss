@@ -1,16 +1,15 @@
 // Love dynamically typed text? You're gonna love this
 // Edit these strings to see them typed on the screen:
 $strings: (
-  "Здравствуйте 👋🏼"
-  "Нет ответа после регистрации...? 😱"
-  "Просто обновите страничку ☕"
-  "Просто обновите страничку ☕"
+  "Рад вас видеть🤗"
+  "Здесь каждый пользователь — герой своей истории. Станьте одним из них!"
+  "Сообщите нам о любых проблемах на сайте — принесите свет во тьму ошибок! ☕"
 );
 
 // now for some timing (in seconds)
-$durCharFwd: 0.10; // character typed
-$durFullGap: 2.00; // time between typed/delete
-$durCharBwd: 0.06; // character deleted
+$durCharFwd: 0.09; // character typed
+$durFullGap: 4.00; // time between typed/delete
+$durCharBwd: 0.04; // character deleted
 $durDoneGap: 1.00; // time between strings
 
 // initializing some variables and functions ✊🏼
@@ -78,15 +77,15 @@ $currentPercentage: 0;
   display: flex;
   align-items: center;
 //   justify-content: center;
-  margin-top: 15px;
   background-color: #000;
+  height: 35px;
 //   background-image: // skeuomorphism anyone?
 //     radial-gradient(rgba(#fff, 0.125), rgba(#fff, 0)),
 //     linear-gradient(to bottom, #000, #000 2px, #111 3px);
 //   background-repeat: repeat-y;
 //   background-position: center center;
 //   background-size: cover, 100% 3px;
-  font-size: calc(5px + 1vw);
+  font-size: calc(6px + 1.3vw);
   font-family: 'VT323', monospace, sans-serif;
   color: #3f3; // hacker green
   -webkit-font-smoothing: antialiased;
@@ -94,7 +93,7 @@ $currentPercentage: 0;
   &::after {
     content: "​"; // zero-width space to retain element height
     position: relative;
-    top: -13px;
+    // top: -13px;
     @media (max-width: 575px) { top: -33px; }
     display: inline-block;
     padding-right: 3px;
@@ -127,3 +126,16 @@ $currentPercentage: 0;
 //  &::before, &::after { display: none !important; }
 //  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1580009/codepen_css-typed-this.png) center / cover;
 // }
+
+body{
+  background-color: #000;
+  background-image: // skeuomorphism anyone?
+    radial-gradient(rgba(#fff, 0.125), rgba(#fff, 0)),
+    linear-gradient(to bottom, #252525, #000 2px, #111 3px);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+}
+.bg{
+  background-color: #000;
+}
