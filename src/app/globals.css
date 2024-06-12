@@ -42,37 +42,39 @@
     #text_dobro_1{
         margin-left: 50px;
     }
-}
-@media (max-width: 420px){
-    #text_dobro_2{
-        margin-top: 95px;
-        font-size: 35px;
-    }
-    #text_dobro_1{
-        margin-top: 125px;
-        font-size: 70px;
-    }
-    #text_dobro{
-        margin-left: -150px;
-        font-size: 19px;
-        width: 300px;
-    }
-    #text_dobro_3{
-        margin-left: -150px;
-        font-size: 21px;
-        width: 300px;
-    }
-    #komanda_button_1{
-        margin-top: 750px;
-        font-size: 15px;
-        margin-left: -78vw;
-    }
-    #komanda_button_2{
-        margin-left: -0.1px;
-        margin-top: 750px;
-        font-size: 15px;
-    }
 } */
+@media (max-width: 450px){
+  /* body{
+    overflow-y: scroll;
+  } */
+  #text_dobro_2{
+      font-size: 15px;
+  }
+  #text_dobro_1{
+      margin-top: -25px;
+      font-size: 40px;
+  }
+  #text_dobro{
+      font-size: 16px;
+      width: 300px;
+  }
+  #text_dobro_3{
+      margin-top: -50px;
+      margin-left: -150px;
+      font-size: 21px;
+      width: 300px;
+  }
+  #komanda_button_1{
+      margin-top: 550px;
+      font-size: 15px;
+      margin-left: -78vw;
+  }
+  #komanda_button_2{
+      margin-left: -0.5px;
+      margin-top: 550px;
+      font-size: 15px;
+  }
+}
 
 @media (min-width: 1600px){
   .info_1{
