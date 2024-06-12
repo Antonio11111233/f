@@ -77,7 +77,7 @@ export default function Home() {
             />
           ))} */}
           <form action="/auth" className='flex text-[23px] gap-2.5 items-center py-1.5 mt-2 px-layout transition-colors hover:bg-border rounded-lg'>
-          <Check className="text-green-500"/><button>Индивидуальная</button>
+          <Check className="text-green-500"/><button className="b_1">Индивидуальная</button>
           </form>
         </div>
 
@@ -89,7 +89,7 @@ export default function Home() {
             />
           ))} */}
            <form action="/auth" className='flex text-[23px] gap-2.5 items-center py-1.5 mt-2 px-layout transition-colors hover:bg-border rounded-lg'>
-          <OctagonX className="text-red-500"/><button>Командная</button>
+          <OctagonX className="text-red-500"/><button className="b_2">Командная</button>
           </form>
         </div>
         <Navbar />
