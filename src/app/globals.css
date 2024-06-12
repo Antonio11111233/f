@@ -74,7 +74,16 @@
     }
 } */
 
-
+@media (min-width: 1600px){
+  .info_1{
+    font-size: 50px;
+    max-width: 500px;
+  }
+  .info_2{
+    font-size: 30px;
+    max-width: 570px;
+  }
+}
 @media (min-width: 1920px){
     #text_dobro{
         font-size: 29px;
