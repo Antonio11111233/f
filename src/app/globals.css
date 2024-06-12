@@ -47,6 +47,10 @@
   /* body{
     overflow-y: scroll;
   } */
+   .h-screen{
+    width: 450px;
+    height: 220vw;
+   }
   #text_dobro_2{
       font-size: 15px;
   }
