@@ -1,4 +1,4 @@
-/* @media (max-width: 1000px){
+@media (max-width: 1000px){
     #text_dobro{
         margin-left: -120px;
     }
@@ -42,7 +42,7 @@
     #text_dobro_1{
         margin-left: 50px;
     }
-} */
+}
 @media (max-width: 450px){
   /* body{
     overflow-y: scroll;
