@@ -69,7 +69,7 @@ export function Pomodoro() {
 					className='mt-1'
 					disabled={isPending}
 				>
-					Create session
+					Запустить
 				</Button>
 			)}
 		</div>
