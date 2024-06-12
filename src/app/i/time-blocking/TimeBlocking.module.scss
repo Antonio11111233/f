@@ -1,7 +1,12 @@
 .list {
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	.block {
 		@apply rounded mb-3 p-4 relative flex items-center justify-between text-sm;
-
+		@media (max-width: 400px) {
+			width: 80vw;
+		}
 		&:active,
 		&:hover {
 			.grip {

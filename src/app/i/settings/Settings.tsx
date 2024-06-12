@@ -9,6 +9,7 @@ import { TypeUserForm } from '@/types/auth.types'
 
 import { useInitialData } from './useInitialData'
 import { useUpdateSettings } from './useUpdateSettings'
+import '../../globals.scss'
 
 export function Settings() {
 	const { register, handleSubmit, reset } = useForm<TypeUserForm>({
@@ -31,7 +32,7 @@ export function Settings() {
 	return (
 		<div>
 			<form
-				className='w-2/4'
+				className='w-2/4 seting'
 				onSubmit={handleSubmit(onSubmit)}
 			>
 				<div className='grid grid-cols-2 gap-10'>

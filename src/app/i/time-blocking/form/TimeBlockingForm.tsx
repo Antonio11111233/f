@@ -9,6 +9,7 @@ import type { TypeTimeBlockFormState } from '@/types/time-block.types'
 import { COLORS } from './colors.data'
 import { useCreateTimeBlock } from './useCreateTimeBlock'
 import { useUpdateTimeBlock } from './useUpdateTimBlock'
+import '../../../globals.scss'
 
 export function TimeBlockingForm() {
 	const { register, control, watch, reset, handleSubmit, getValues } =
@@ -42,9 +43,10 @@ export function TimeBlockingForm() {
 	}
 
 	return (
+		<div className='in1'>
 		<form
 			onSubmit={handleSubmit(onSubmit)}
-			className='w-3/5'
+			className='w-3/5 input_1'
 		>
 			<Field
 				{...register('name', {
@@ -95,5 +97,6 @@ export function TimeBlockingForm() {
 				{existsId ? 'Update' : 'Создать'}
 			</Button>
 		</form>
+		</div>//Возможны проблемы
 	)
 }
